@@ -2,7 +2,7 @@ Require Import boolean_operations.
 
 (* Prove that (A + B) * C = true if A = true and C = true *)
 Lemma basic_computation : forall A B : bool,
-  A = true -> (b_and (b_or A B) true) = true.
+  A = true -> (boolean_multiplucation (boolean_addition A B) true) = true.
 Proof.
   intros A B HA.
   (* Since A = true, we can substitute it *)

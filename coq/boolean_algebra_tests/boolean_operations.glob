@@ -1,0 +1,36 @@
+DIGEST 94877aa2170e4c4ffab40084f3c8cb67
+Fboolean_operations
+ind 38:41 <> bool
+constr 57:60 <> true
+constr 73:77 <> false
+R64:67 boolean_operations <> bool:1 ind
+R81:84 boolean_operations <> bool:1 ind
+scheme 38:41 <> bool_rect
+scheme 38:41 <> bool_ind
+scheme 38:41 <> bool_rec
+scheme 38:41 <> bool_sind
+def 164:179 <> boolean_addition
+R190:193 boolean_operations <> bool ind
+binder 182:183 <> b1:3
+binder 185:186 <> b2:4
+R198:201 boolean_operations <> bool ind
+R218:219 boolean_operations <> b2:4 var
+R214:215 boolean_operations <> b1:3 var
+R230:233 boolean_operations <> true constr
+R241:244 boolean_operations <> true constr
+R253:256 boolean_operations <> true constr
+R261:264 boolean_operations <> true constr
+R270:274 boolean_operations <> false constr
+R277:281 boolean_operations <> false constr
+R286:290 boolean_operations <> false constr
+def 311:332 <> boolean_multiplucation
+R343:346 boolean_operations <> bool ind
+binder 335:336 <> b1:7
+binder 338:339 <> b2:8
+R351:354 boolean_operations <> bool ind
+R371:372 boolean_operations <> b2:8 var
+R367:368 boolean_operations <> b1:7 var
+R383:386 boolean_operations <> true constr
+R389:392 boolean_operations <> true constr
+R397:400 boolean_operations <> true constr
+R414:418 boolean_operations <> false constr
