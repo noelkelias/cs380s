@@ -1,24 +1,7 @@
-(* Define Boolean values *)
-Inductive bool : Type :=
-  | true : bool
-  | false : bool.
-
-(* Define addition (OR) and multiplication (AND) for booleans *)
-Definition b_or (b1 b2 : bool) : bool :=
-  match b1, b2 with
-  | true, _ => true
-  | _, true => true
-  | false, false => false
-  end.
-
-Definition b_and (b1 b2 : bool) : bool :=
-  match b1, b2 with
-  | true, true => true
-  | _, _ => false
-  end.
+Require Import boolean_operations. 
 
 (* Prove that (A + B) * C = true if A = true and C = true *)
-Lemma or_and_true : forall A B : bool,
+Lemma basic_computation : forall A B : bool,
   A = true -> (b_and (b_or A B) true) = true.
 Proof.
   intros A B HA.
@@ -33,9 +16,9 @@ Proof.
 Qed.
 
 (* Example usage of the lemma *)
-Example test_or_and_true : b_and (b_or true false) true = true.
+Example main : boolean_multiplucation (boolean_addition true false) true = true.
 Proof.
-  apply or_and_true; reflexivity.
+  apply basic_computation; reflexivity.
 Qed.
 
 
