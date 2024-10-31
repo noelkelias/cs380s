@@ -249,7 +249,8 @@ fn main() {
    let circuit_filepath = "circuits/proof_verification/proof_analysis.r1cs";
    let witness_gen_filepath = "circuits/proof_verification/proof_analysis_cpp/proof_analysis";
 
-   let proof_paths = ["misc/proof_tests/length_tests/small_proof0.txt"];
+   // let proof_paths = ["misc/proof_tests/length_tests/small_proof0.txt"];
+   let proof_paths = ["misc/proof_tests/boolean_algebra_tests/basic_computation.txt"];
 
    for path in proof_paths {
       println!("");
