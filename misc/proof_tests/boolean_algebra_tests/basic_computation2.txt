@@ -1,0 +1,5 @@
+A (Hypothesis)
+B (Hypothesis)
+C (Hypothesis)
+A&B (Conjunction, [1,2])
+C|A&B (Addition, [3,4])
