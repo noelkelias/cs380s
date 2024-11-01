@@ -1,36 +1,36 @@
 DIGEST a9de5f967c3cae554806760cf76c1d73
-FMyProofs.boolean_ops
+Fboolean_ops
 ind 38:41 <> bool
 constr 57:60 <> true
 constr 73:77 <> false
-R64:67 MyProofs.boolean_ops <> bool:1 ind
-R81:84 MyProofs.boolean_ops <> bool:1 ind
+R64:67 boolean_ops <> bool:1 ind
+R81:84 boolean_ops <> bool:1 ind
 scheme 38:41 <> bool_rect
 scheme 38:41 <> bool_ind
 scheme 38:41 <> bool_rec
 scheme 38:41 <> bool_sind
 def 164:174 <> boolean_add
-R185:188 MyProofs.boolean_ops <> bool ind
+R185:188 boolean_ops <> bool ind
 binder 177:178 <> b1:3
 binder 180:181 <> b2:4
-R193:196 MyProofs.boolean_ops <> bool ind
-R213:214 MyProofs.boolean_ops <> b2:4 var
-R209:210 MyProofs.boolean_ops <> b1:3 var
-R225:228 MyProofs.boolean_ops <> true constr
-R236:239 MyProofs.boolean_ops <> true constr
-R248:251 MyProofs.boolean_ops <> true constr
-R256:259 MyProofs.boolean_ops <> true constr
-R265:269 MyProofs.boolean_ops <> false constr
-R272:276 MyProofs.boolean_ops <> false constr
-R281:285 MyProofs.boolean_ops <> false constr
+R193:196 boolean_ops <> bool ind
+R213:214 boolean_ops <> b2:4 var
+R209:210 boolean_ops <> b1:3 var
+R225:228 boolean_ops <> true constr
+R236:239 boolean_ops <> true constr
+R248:251 boolean_ops <> true constr
+R256:259 boolean_ops <> true constr
+R265:269 boolean_ops <> false constr
+R272:276 boolean_ops <> false constr
+R281:285 boolean_ops <> false constr
 def 306:317 <> boolean_mult
-R328:331 MyProofs.boolean_ops <> bool ind
+R328:331 boolean_ops <> bool ind
 binder 320:321 <> b1:7
 binder 323:324 <> b2:8
-R336:339 MyProofs.boolean_ops <> bool ind
-R356:357 MyProofs.boolean_ops <> b2:8 var
-R352:353 MyProofs.boolean_ops <> b1:7 var
-R368:371 MyProofs.boolean_ops <> true constr
-R374:377 MyProofs.boolean_ops <> true constr
-R382:385 MyProofs.boolean_ops <> true constr
-R399:403 MyProofs.boolean_ops <> false constr
+R336:339 boolean_ops <> bool ind
+R356:357 boolean_ops <> b2:8 var
+R352:353 boolean_ops <> b1:7 var
+R368:371 boolean_ops <> true constr
+R374:377 boolean_ops <> true constr
+R382:385 boolean_ops <> true constr
+R399:403 boolean_ops <> false constr
