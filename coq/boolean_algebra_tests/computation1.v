@@ -1,8 +1,8 @@
-Require Import boolean_operations. 
+Require Import boolean_ops. 
 
 (* Prove that (A + B) * C = true if A = true and C = true *)
-Lemma basic_computation : forall A B : bool,
-  A = true -> (boolean_multiplucation (boolean_addition A B) true) = true.
+Lemma computation1 : forall A B : bool,
+  A = true -> (boolean_mult (boolean_add A B) true) = true.
 Proof.
   intros A B HA.
   (* Since A = true, we can substitute it *)
@@ -16,9 +16,9 @@ Proof.
 Qed.
 
 (* Example usage of the lemma *)
-Example main : boolean_multiplucation (boolean_addition true false) true = true.
+Example main : boolean_mult (boolean_add true false) true = true.
 Proof.
-  apply basic_computation; reflexivity.
+  apply computation1; reflexivity.
 Qed.
 
 
