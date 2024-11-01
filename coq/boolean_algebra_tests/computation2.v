@@ -30,7 +30,7 @@ Proof.
 Qed.
 
 (* Example call to test the lemma *)
-Example test_computation2 :
+Example main :
   boolean_add
     (boolean_add
        (boolean_mult true true)
