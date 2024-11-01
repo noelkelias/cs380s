@@ -131,12 +131,10 @@ fn encode_statement(proof_lines: &Vec<Vec<String>>) -> Vec<[i64; 3]>{
    for line in proof_lines{
       let mut statement: [i64; 3] = [0; 3];
       let mut raw_statement = line[0].split(&['&','|','>'][..]).collect::<Vec<_>>();
-      // let mut raw_statement = line[0].splitn(2, &['&', '|', '>'][..]).collect::<Vec<_>>();          
 
       for symbol in symbols{
          if line[0].contains(&symbol.to_owned()){
             raw_statement.push(symbol);
-            // break;
          }
       }
       
