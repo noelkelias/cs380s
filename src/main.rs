@@ -29,6 +29,12 @@ fn run_test(circuit_filepath: String, witness_gen_filepath: String, proof_filepa
    let encoded_logic = encode_logic(&proof_lines);
    let encoded_reasoning = encode_reasoning(&proof_lines, &encoded_statements);
 
+   //Printing debugging
+   println!("{:?}", proof_lines);
+   println!("{:?}", encoded_statements);
+   println!("{:?}", encoded_logic);
+   println!("{:?}", encoded_reasoning);
+
    let iteration_count = proof_lines.len();
 
    let mut private_inputs = Vec::new();
@@ -129,14 +135,17 @@ fn encode_statement(proof_lines: &Vec<Vec<String>>) -> Vec<[i64; 3]>{
 
    let mut encoded_statements = Vec::new();
    for line in proof_lines{
+      statement_dict.insert(&line[0], count);
+      count+=1;
+
       let mut statement: [i64; 3] = [0; 3];
-      let mut raw_statement = line[0].split(&['&','|','>'][..]).collect::<Vec<_>>();
-      // let mut raw_statement = line[0].splitn(2, &['&', '|', '>'][..]).collect::<Vec<_>>();          
+      // let mut raw_statement = line[0].split(&['&','|','>'][..]).collect::<Vec<_>>();
+      let mut raw_statement = line[0].splitn(2, &['&', '|', '>'][..]).collect::<Vec<_>>();          
 
       for symbol in symbols{
          if line[0].contains(&symbol.to_owned()){
             raw_statement.push(symbol);
-            // break;
+            break;
          }
       }
       
